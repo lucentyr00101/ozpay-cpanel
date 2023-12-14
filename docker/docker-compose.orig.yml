@@ -1,0 +1,21 @@
+version: '3.5'
+
+services:
+  opayant_build:
+    build: ../
+    container_name: 'opayant_build'
+    volumes:
+      - opayant-dist:/code/dist
+
+  opayant_server:
+    image: nginx
+    ports:
+      - 8001:80
+    container_name: 'opayant_server'
+    restart: unless-stopped
+    volumes:
+      - opayant-dist:/usr/share/nginx/html:ro
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf
+
+volumes:
+  opayant-dist:

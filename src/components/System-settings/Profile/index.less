@@ -1,0 +1,102 @@
+@import '~antd/es/style/themes/default.less';
+
+.profileContainer {
+  padding: 30px;
+  font-weight: 500;
+  background-color: #fff;
+
+  :global {
+    .formContainer {
+      box-sizing: border-box;
+      max-width: 680px;
+      margin: auto;
+      padding: 34px 74px 40px 75px;
+      border: 1px solid rgba(0, 0, 0, 0.514);
+      border-radius: 5px;
+    }
+
+    .profile {
+      margin: 40px 25px;
+    }
+
+    .profile .ant-form {
+      width: 720px !important;
+    }
+
+    .ant-form-item .ant-select {
+      width: 70%;
+    }
+
+    .formTitle .ant-form-item-label {
+      // width: 230px;
+      width: 200px;
+      text-align: left;
+    }
+
+    .formTitle .ant-form-item-label > label {
+      // width: 230px !important;
+      text-align: left;
+    }
+
+    .formTitle {
+      .ant-form-item-control-input-content {
+        display: flex;
+        align-items: center;
+      }
+    }
+    .formTitle.formSmall {
+      max-width: 480px;
+    }
+
+    .profileItem {
+      display: flex;
+      margin-bottom: 24px;
+    }
+
+    .title {
+      width: 200px;
+      padding-right: 8px;
+      text-align: left;
+    }
+
+    .data {
+      margin-right: 10px;
+      color: #9ca3af;
+    }
+
+    .domainContainer {
+      width: 70%;
+      line-height: 30px;
+      border: 1px solid #d9d9d9;
+    }
+
+    .memberlinkTextBox {
+      position: relative;
+      display: block;
+      padding: 0 10px;
+      overflow: hidden;
+
+      /* width: 113px; */
+
+      /* border: 1px solid #d9d9d9; */
+      color: rgba(0, 0, 0, 0.25);
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      cursor: no-drop;
+    }
+
+    .urlContainer {
+      width: 30%;
+      overflow: hidden;
+      color: rgba(0, 0, 0, 0.25);
+      line-height: 30px;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      border: 1px solid #d9d9d9;
+    }
+
+    .copy {
+      margin-left: 10px;
+    }
+  }
+}

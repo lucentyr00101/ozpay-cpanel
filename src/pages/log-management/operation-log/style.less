@@ -1,0 +1,40 @@
+@import '~antd/es/style/themes/default.less';
+
+.OperationLogTable {
+  :global {
+
+    .ant-row.ant-row-start div:nth-child(2) .ant-row.ant-form-item .ant-col.ant-form-item-label{
+      flex: 0 0 auto !important;
+    }
+    .ant-row.ant-row-start div:nth-child(3) .ant-row.ant-form-item .ant-col.ant-form-item-label{
+      flex: 0 0 auto !important;
+    }
+
+  }
+}
+.details {
+  &__text {
+    color: rgba(0, 0, 0, 0.85);
+    font-weight: 500;
+    font-size: 16px;
+    &_head {
+      margin-left: 10px;
+    }
+    &_success {
+      margin-left: 32px;
+      color: #52c41a;
+    }
+    &_failed {
+      margin-left: 32px;
+      color: #ff4d4f;
+    }
+  }
+}
+
+.mb10 {
+  margin-bottom: 10px;
+}
+
+.mr10 {
+  margin-right: 10px;
+}

@@ -1,0 +1,120 @@
+@import '~antd/es/style/variable.less';
+
+html,
+body,
+#root {
+  height: 100%;
+  background-color: #f0f2f5;
+}
+
+.colorWeak {
+  filter: invert(80%);
+}
+
+.ant-layout {
+  min-height: 100vh;
+}
+.ant-pro-sider.ant-layout-sider.ant-pro-sider-fixed {
+  left: unset;
+}
+
+canvas {
+  display: block;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+@media (max-width: @screen-xs) {
+  .ant-table {
+    width: 100%;
+    overflow-x: auto;
+    &-thead > tr,
+    &-tbody > tr {
+      > th,
+      > td {
+        white-space: pre;
+        > span {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+// Compatible with IE11
+@media screen and(-ms-high-contrast: active), (-ms-high-contrast: none) {
+  body .ant-design-pro > .ant-layout {
+    min-height: 100vh;
+  }
+}
+
+.tabLayout {
+  :global {
+    .ant-page-header-footer:first-child {
+      margin-top: -16px;
+      margin-left: -24px;
+    }
+    .ant-tabs-tab-with-remove {
+      margin-left: 0 !important;
+    }
+
+    .ant-tabs-nav-list > div.ant-tabs-tab-with-remove.ant-tabs-tab-active:not(:first-child) {
+      margin-left: -1px !important;
+      border: 1px solid #e8e8e8;
+      border-bottom: 1px solid #fff;
+    }
+
+    .ant-tabs-tab-remove {
+      margin-left: 0;
+      padding-top: 3px;
+    }
+
+    .ant-tabs-tab-btn {
+      color: rgba(0, 0, 0, 0.65);
+      font-size: 15px;
+    }
+
+    // .ant-tabs-nav {
+    //   border-bottom: 1px solid #e8e8e8;
+    // }
+
+    .ant-tabs-card > .ant-tabs-nav .ant-tabs-tab {
+      border: 1px solid #e8e8e8;
+      transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+    }
+  }
+}
+
+.dashboardLogo {
+  width: 38px;
+  height: 38px;
+  margin: 0 auto;
+  object-fit: contain;
+  user-select: none;
+  pointer-events: none;
+}
+
+.otp-error {
+  display: block;
+  margin: auto;
+  margin-top: -14px;
+  color: #ff4d4f;
+  text-align: left;
+}
+
+.ant-pro-form-query-filter {
+  .ant-form-item-label {
+    label {
+      font-weight: 700;
+    }
+  }
+}

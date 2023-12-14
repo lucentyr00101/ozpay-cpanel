@@ -1,0 +1,12 @@
+version: '3.5'
+
+services:
+  opayant_dev:
+    build:
+      context: ../
+      dockerfile: Dockerfile.dev
+    container_name: 'opayant_ui_dev'
+    volumes:
+      - ../src:/code/src
+      - ../config:/code/config
+      - ../mock:/code/mock

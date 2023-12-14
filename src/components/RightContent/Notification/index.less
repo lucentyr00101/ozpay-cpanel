@@ -1,0 +1,53 @@
+.notif-menu {
+  padding: 0;
+  .ant-dropdown-menu-item.ant-dropdown-menu-item-only-child {
+    padding: 0;
+    &:hover,
+    &:focus {
+      background: initial;
+    }
+  }
+  .notif-tabs {
+    .ant-tabs-nav-list {
+      width: 99%;
+      .ant-tabs-tab {
+        flex-grow: 1;
+        padding: 0;
+        .ant-tabs-tab-btn {
+          width: 100%;
+          line-height: 2.5;
+          text-align: center;
+        }
+      }
+    }
+  }
+  .notification {
+    min-width: 333px;
+    max-height: 420px;
+    overflow: auto;
+    background: #fff;
+    border-radius: 1.89351px;
+    // filter: drop-shadow(2px 2.52468px 2.52468px rgba(0, 0, 0, 0.25));
+
+    /* width */
+    &::-webkit-scrollbar {
+      width: 5px;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+      background: #f1f1f1;
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+      background: #c4c4c4;
+      border-radius: 10px;
+    }
+
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+      background: #555;
+    }
+  }
+}

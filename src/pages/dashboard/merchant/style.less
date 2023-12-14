@@ -1,0 +1,34 @@
+.lineChartTabs {
+    :global {
+      .ant-tabs-nav::before {
+        border-bottom: none !important;
+      }
+    }
+}
+
+.merchantRadioButton {
+    :global { 
+      .ant-radio-button-wrapper {
+        border: none;
+      }
+  
+      .ant-radio-button-wrapper:first-child {
+        border-left: none; 
+      }
+      
+      .ant-radio-button-wrapper:focus-within  {
+        box-shadow: none;
+      }
+  
+      .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled):focus-within {
+        box-shadow: none;
+      }
+      .ant-radio-button-wrapper:not(:first-child)::before{
+        background-color: transparent;
+      }
+      
+      .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled):hover::before {
+        background-color: transparent;
+      }
+    }
+}

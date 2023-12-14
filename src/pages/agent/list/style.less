@@ -1,0 +1,31 @@
+@import '~antd/es/style/themes/default.less';
+
+.merchantTable {
+  :global {
+    .ant-row.ant-row-start div:nth-child(1) .ant-row.ant-form-item .ant-col.ant-form-item-label{
+      flex: 0 0 auto !important;
+    }
+    
+    .ant-space.ant-space-horizontal.ant-dropdown-trigger.ant-pro-table-list-toolbar-dropdownmenu-label {
+      gap: 5px !important;
+      align-items: baseline;
+
+      .ant-space-item:first-child {
+        font-weight: 500;
+        font-size: 14px;
+      }
+
+      .ant-space-item:not(:first-child) {
+        color: @primary-color;
+        font-size: 10px;
+      }
+    }
+  }
+}
+
+.alertPopup {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}

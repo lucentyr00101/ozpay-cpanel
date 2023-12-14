@@ -1,0 +1,25 @@
+@import '~antd/es/style/themes/default.less';
+
+.chargeRequest {
+    :global {
+        .ant-space.ant-space-horizontal.ant-dropdown-trigger.ant-pro-table-list-toolbar-dropdownmenu-label {
+            gap: 5px !important;
+            align-items: baseline;
+      
+            .ant-space-item:first-child {
+              font-weight: 400;
+              font-size: 14px;
+            }
+      
+            .ant-space-item:not(:first-child) {
+              color: @primary-color;
+              font-size: 10px;
+            }
+          }
+
+        .ant-pro-table-list-toolbar-title {
+            font-weight: 400;
+            font-size: 13px;
+          }
+    }
+}

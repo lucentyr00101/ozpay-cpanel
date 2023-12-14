@@ -1,0 +1,38 @@
+@import '~antd/es/style/themes/default.less';
+
+.containerLogo {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  height: 550px;
+  background-color: #fff;
+
+  .right {
+    display: inherit;
+    margin-left: auto;
+  }
+
+  .uploadLogo {
+    margin-bottom: 100px;
+    text-align: center;
+    .logo-preview img {
+      object-fit: contain;
+    }
+    .ant-upload-select-picture-card {
+      width: 135px !important;
+      height: 30px !important;
+    }
+    .ant-upload-list-picture-card-container {
+      display: block;
+      width: 350px;
+      height: 350px;
+      margin: auto;
+    }
+  }
+  .ant-space {
+    position: relative;
+    right: -30px;
+    bottom: 30px;
+    float: right;
+  }
+}

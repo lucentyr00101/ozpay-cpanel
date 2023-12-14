@@ -1,0 +1,11 @@
+version: '3.5'
+
+services:
+  opayant_cpanel:
+    build: ../
+    container_name: 'opayant_cpanel'
+    volumes:
+      - opayant-dist:/code/dist
+
+volumes:
+  opayant-dist:

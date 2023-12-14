@@ -1,0 +1,113 @@
+@import '~antd/es/style/themes/default.less';
+
+
+.paymentInfo {
+  p {
+    overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  }
+}
+.withdrawalTable {
+  :global {
+    div.ant-typography, .ant-typography p {
+      margin-bottom: 3px;
+    }
+
+    .ant-row.ant-row-start div:nth-child(6) .ant-row.ant-form-item .ant-col.ant-form-item-label{
+      flex: 0 0 auto !important;
+    }
+
+    .ant-space.ant-space-horizontal.ant-dropdown-trigger.ant-pro-table-list-toolbar-dropdownmenu-label {
+      gap: 5px !important;
+      align-items: baseline;
+
+      .ant-space-item:first-child {
+        font-weight: 400;
+        font-size: 14px;
+      }
+
+      .ant-space-item:not(:first-child) {
+        color: @primary-color;
+        font-size: 10px;
+      }
+
+    }
+
+    .ant-pro-table-list-toolbar-title {
+      font-weight: 400;
+      font-size: 13px;
+    }
+  }
+}
+
+.withdrawalDetails {
+  :global {
+    .ant-descriptions-row > th,
+    .ant-descriptions-row > td {
+      padding-bottom: 5px;
+    }
+
+    .ant-divider,
+    .ant-descriptions {
+      padding: 0 35px !important;
+    }
+  }
+}
+
+.templateRow {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  margin-top: 3.5rem;
+}
+.templateDocument {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.siteCardBorderLessWrapper {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  background: #ececec;
+  border: 1px solid #000;
+}
+
+:global {
+  .custom-range {
+    width: 100%;
+
+    .ant-col  {
+      max-width: unset !important;
+    }
+
+    .ant-input-disabled {
+      border: none;
+
+      &::placeholder {
+        color: #000;
+      }
+    }
+    .ant-input-number {
+      border: 1px solid #d9d9d9 !important;
+    }
+
+    .ant-input-number-input {
+      border-right: 1px solid #d9d9d9 !important;
+    }
+
+    .ant-input-number-focused {
+      margin-right: 0 !important;
+    }
+  }
+}
+
+.cryptoAmount{
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 17px;
+}
